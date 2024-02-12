@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="icon" type="image/x-icon" href="./assets/favicon.ico" />
+  <meta charset="UTF-8"> <!--Per permetre accents, apostrofs...-->
+  <title>login</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+
+<body class="body-login">
+  <header class="Header-out">
+    <div class="Header-in">
+      <div class="Header-logo">
+        <h1>Libreria</h1>
+      </div>
+
+      <nav class="Header-nav">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="register.html">Registrarse</a></li>
+        <li><a href="login.html">Iniciar Sesión</a></li>
+      </nav>
+    </div>
+  </header>
+
+  <div class="login">
+    <h1>Iniciar Sesión</h1>
+    <form method="post" action="index.html" onsubmit="return confirmaRegistre();">
+      <div class="txt">
+        <!--Mètode get es veu psswd. Amb post no. PREGUNTAR!!-->
+        <label for="email">Email:</label><input type="email" name="email"><br>
+        <label for="pwd">Contraseña:</label><input id="pwd" name="pwd" type="password"><br>
+        <input type="submit" value="Inicia sesión">
+      </div>
+    </form>
+  </div>
+
+
+</body>
+
+</html>

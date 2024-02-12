@@ -1,0 +1,179 @@
+<!DOCTYPE html> 
+<html>
+	<head>
+		<meta charset="UTF-8"> <!--Per permetre accents, apostrofs...-->
+		<title> Pr&agrave;ctiques TDIW</title> 
+		<link rel="stylesheet" type="text/css" href="css/style.css" title="main" /> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+        
+
+	</head>
+<body>
+	<div class="layout_listado_productos">
+        <!--Cabecera-->
+        <header id="Header-out_productos" class="Header-out">
+            <div class="Header-in">
+                <div class="Header-logo">
+                    <h1>Libreria</h1>
+                </div>
+
+                <nav class="Header-nav">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="register.html">Registrarse</a></li>
+                    <li><a href="login.html">Iniciar Sesión</a></li>
+                </nav>
+            </div>
+        </header>
+        <!--Flexbox categorias libros-->
+            <section class="categoria_libros_contenedor">
+                <h1 class="titulo_categoria">Categorias</h1>
+                <div class="libros_contenedor">
+                    <div class="tarjeta">
+                        <a href="llistat_productes.html">
+                            <div id="CF" name="CF" class="libro">
+                                <img src="img/CF.png"alt="Ciencia Ficción">
+                                <div class="content">Ciencia Ficción</div>
+                            </div>
+                        </a>
+
+                    </div>
+
+                    <div class="tarjeta">
+                        <a href="llistat_productes.html">
+                            <div id="Manga" name="Manga" class="libro"> 
+                                <img src="img/MANGA.jpg" alt="Manga">
+                                <div class="content">Manga</div>
+                            </div>
+                            
+                        </a>
+                    </div>
+
+                    <div class="tarjeta">
+                        <a href="llistat_productes.html">
+                            <div id="DP" name="DP" class="libro"> 
+                                <img src="img/DP.jpg" alt="Desarrrollo personal">
+                                <div class="content">Desarrrollo personal</div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="tarjeta">
+                        <a href="llistat_productes.html">
+                            <div id="Historia" name="Historia" class="libro"> 
+                                <img src="img/Historia.jpg" alt="Historia">
+                                <div class="content">Historia</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </section>
+    </div>
+
+    <ul>
+		<li>PRIMER ELEMENT</li>
+		<li>SEGON ELEMENT</li>
+	</ul>
+	
+	<div class="text-center"></div>
+
+	<div class="container pull-left">
+		<div class="row">
+			<div class="col-3"><button id="button-hide-elements">HIDE ELEMENTS</button></div>
+			<div class="col-3"><button id="button-background-red">CHANGE BACKGROUND COLOR RED</button></div>
+            <div class="col-3"><button id="button-background-none">CHANGE BACKGROUND COLOR NONE</button></div>
+			<div class="col-3"><button id="button-text-ajax">AJAX</button></div>
+            <div class="col-3"><button id="button-text-ajax2">AJAX text</button></div>
+            <div class="col-3">
+                <div id="button-hover">Hover
+                    <div id="show">Múestrame</div>
+                </div>
+            </div>
+           
+		</div>
+	</div>
+
+	<script type="text/javascript">
+
+        console.log('EJECUTANDO JS');
+
+    	$(document).ready(function(){
+            
+            // classes "".show"
+            $('#show').toggle();
+
+        	$('#button-hide-elements').click(function(){
+				$('li').toggle('slow');
+
+			});
+
+			$('#button-background-red').click(function() {
+				$('li').css('background-color', 'red');
+
+			});
+
+            $('#button-background-none').click(function() {
+				$('li').css('background-color', 'transparent');
+
+			});
+
+            $('#button-text-ajax').click(function(){
+                var buttonName = $('this').attr('id');
+                console.log(buttonName);
+                $('.text-center').load('login.html');
+                console.log('load completed!');
+            });
+
+            $('#button-text-ajax2').click(function(){
+                var buttonName = $('this').attr('id');
+                console.log(buttonName);
+                $('.text-center').html('<p>Hola, mundo!</p>');
+                console.log('load completed!');
+            });
+
+
+            $('#button-hover').hover(function(){
+                var buttonName = $('this').attr('id');
+                console.log(buttonName);
+                $('#show').toggle();
+            });
+
+
+    
+    	});
+	</script>
+
+	
+<!--
+<section>
+<h3>Accés a la pàgina web:  </h3>
+	<p>
+		<a href="https://tdiw-l10.deic-docencia.uab.cat"	title="web">https://tdiw-l10.deic-docencia.uab.cat</a>	
+	</p>
+	<p>
+	Qualsevol usuari amb un password correcte pot accedir a la pàgina
+	web, tret que ho configuris d'una altra forma fent servir un arxiu
+	.htaccess
+	</p>
+<br>
+<h3>Accés a la base de dades:  </h3>
+	<p>
+		<a href="https://deic-docencia.uab.cat/phppgadmin/" title="bbdd">https://deic-docencia.uab.cat/phppgadmin/</a>	
+	</p>
+	<p>
+		Feu servir la mateixa combinació nom d'usuari - paraula de pas que feu servir per accedir als ordinadors del laboratori.
+	</p>
+
+<h3>Accés als logs:  </h3>
+        <p>
+                <a href="https://tdiw-l10.deic-docencia.uab.cat/logs" title="logs">https://tdiw-l10.deic-docencia.uab.cat/logs</a>  
+        </p>
+        <p>Trobareu els darrers logs en format text pla. Només l'usuari
+        "amo dels logs" els pots consultar.</p>
+
+</section>
+-->
+
+</body>
+</html>
+

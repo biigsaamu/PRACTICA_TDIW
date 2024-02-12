@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8"> <!--Per permetre accents, apostrofs...-->
+    <title> Pràctiques TDIW</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" title="main" />
+</head>
+
+<body>
+    <div class="layout_listado_productos">
+        <!--Cabecera-->
+        <header id="Header-out_productos" class="Header-out">
+            <div class="Header-in">
+                <div class="Header-logo">
+                    <h1>Libreria</h1>
+                </div>
+
+                <nav class="Header-nav">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="register.html">Registrarse</a></li>
+                    <li><a href="login.html">Iniciar Sesión</a></li>
+                </nav>
+            </div>
+        </header>
+        <!--Flexbox categorias libros-->
+        <section class="categorias_productos_container">
+            <!--Flexbox categoria libros CF-->
+            <section class="categoria_libros_contenedor">
+                <h1 class="titulo_categoria">Ciencia Ficción</h1>
+                <div class="libros_contenedor"> <!--Container-->
+                    <div class="tarjeta"> <!--Card-->
+                        <a href="">
+                            <div id="CF_1" name="CF_1" class="libro"> 
+                                <img src="img/CF_1.jpg" alt="1984 George Orwell">
+                                <div class="content">1984</div>
+                            </div>
+                        </a>
+
+                    </div>
+
+                    <div class="tarjeta">
+                        <a href="">
+                            <div id="CF_2" name="CF_2" class="libro"> <img src="img/CF_2.webp"
+                                    alt="Crónicas Marcianas Ray Bradbury">
+                                <div class="content">Crónicas Marcianas</div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="tarjeta">
+                        <a href="">
+                            <div id="CF_3" name="CF_3" class="libro"> <img src="img/CF_3.jpg" alt="Dune Frank Herbert">
+                                <div class="content">Dune</div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="tarjeta">
+                        <a href="">
+                            <div id="CF_4" name="CF_4" class="libro"> <img src="img/CF_4.webp"
+                                    alt="El fin de la eternidad Isaac Asimov">
+                                <div class="content">El fin de la eternidad</div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="tarjeta">
+                        <a href="">
+                            <div id="CF_5" name="CF_5" class="libro"> <img src="img/CF_5.jpg"
+                                    alt="Frontera oscura Sabino Cabeza">
+                                <div class="content">Frontera oscura</div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="tarjeta">
+                        <a href="">
+                            <div id="CF_6" name="CF_6" class="libro"> <img src="img/CF_6.jpg"
+                                    alt="Mickey 7 Edward Ashton">
+                                <div class="content">Mickey 7</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <!--Flexbox categoria libros Manga-->
+            <section class="categoria_libros_contenedor">
+                <h1 class="titulo_categoria">Manga</h1>
+                <div class="libros_contenedor">
+                    <div class="tarjeta">
+                        <a href="">
+                            <div id="Manga_1" name="Manga_1" class="libro">
+                                <img src="img/MANGA_1.webp"alt="Attack on Titan">
+                                <div class="content">Attack on Titan</div>
+                            </div>
+                        </a>
+
+                    </div>
+
+                    <div class="tarjeta">
+                        <a href="">
+                            <div id="Manga_2" name="Manga_2" class="libro"> 
+                                <img src="img/MANGA_2.jpg" alt="Baki">
+                                <div class="content">Baki</div>
+                            </div>
+                            
+                        </a>
+                    </div>
+
+                    <div class="tarjeta">
+                        <a href="">
+                            <div id="Manga_3" name="Manga_3" class="libro"> 
+                                <img src="img/MANGA_3.jpg" alt="Dragon Ball">
+                                <div class="content">Dragon Ball</div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="tarjeta">
+                        <a href="">
+                            <div id="Manga_4" name="Manga_4" class="libro"> 
+                                <img src="img/MANGA_4.jpeg" alt="Death Note">
+                                <div class="content">Death Note</div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="tarjeta">
+                        <a href="">
+                            <div id="Manga_5" name="Manga_5" class="libro"> 
+                                <img src="img/MANGA_5.jpg" alt="One Piece">
+                                <div class="content">One Piece <br> PRECIO: 10€</div> <!--CAMBIAR-->
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="tarjeta">
+                        <a href="">
+                            <div id="Manga_6" name="Manga_6" class="libro"> 
+                                <img src="img/MANGA_6.jpg" alt="My Hero Academy">
+                                <div class="content">My Hero Academy</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <!--Flexbox categoria libros DP-->
+            <section class="categoria_libros_contenedor">
+                <h1 class="titulo_categoria">Desarrollo Personal</h1>
+                <div class="libros_contenedor">
+                    <div class="tarjeta">
+                        <a href="">
+                            <div id="DP_1" name="DP_1" class="libro"> 
+                                <img src="img/DP_1.jpg" alt="El poder del ahora Eckhart Tolle">
+                                <div class="content">El poder del ahora</div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="tarjeta">
+                        <a href="">
+                            <div id="DP_2" name="DP_2" class="libro"> 
+                                <img src="img/DP_2.jpg" alt="Como ganar e influir sobre las personas Dale Carnegie">
+                                <div class="content">Como ganar amigos e influir sobre las personas</div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="tarjeta">
+                        <a href="">
+                            <div id="DP_3" name="DP_3" class="libro"> <img src="img/DP_3.jpg"
+                                    alt="Hábitos Atómicos James Clear">
+                                <div class="content">Hábitos Atómicos</div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="tarjeta">
+                        <a href="">
+                            <div id="DP_4" name="DP_4" class="libro"> <img src="img/DP_4.jpg"
+                                    alt="El monje que vendió su Ferrai Robin Sharma">
+                                <div class="content">El monje que vendió su Ferrari</div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="tarjeta">
+                        <a href="">
+                            <div id="DP_5" name="DP_5" class="libro"> <img src="img/DP_5.jpg"
+                                    alt="Invicto Marcos Vázquez">
+                                <div class="content">Invicto</div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="tarjeta">
+                        <a href="">
+                            <div id="DP_6" name="DP_6" class="libro"> <img src="img/DP_6.jpg"
+                                    alt="Piense y hágase rico Napolleon Hill">
+                                <div class="content">Piense y hágase rico</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <!--Flexbox categoria libros Historia-->
+            <section class="categoria_libros_contenedor">
+                <h1 class="titulo_categoria">Historia</h1>
+                <div class="libros_contenedor">
+                    <div class="tarjeta">
+                        <a href="">
+                            <div id="Historia_1" name="Historia_1" class="libro"> <img src="img/Historia_1.webp"
+                                    alt="Trafalgar Agustín Guimerà (ed.)">
+                                <div class="content">Trafalgar</div>
+                            </div>
+                        </a>
+
+                    </div>
+
+                    <div class="tarjeta">
+                        <a href="">
+                            <div id="Historia_2" name="Historia_2" class="libro"> <img src="img/Historia_2.webp"
+                                    alt="El antiguo Oriente Mario Liverani">
+                                <div class="content">El antiguo Oriente</div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="tarjeta">
+                        <a href="">
+                            <div id="Historia_3" name="Historia_3" class="libro"> <img src="img/Historia_3.webp"
+                                    alt="Un año en la antigua Roma Néstor F. Marqués">
+                                <div class="content">Un año en la antigua Roma</div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="tarjeta">
+                        <a href="">
+                            <div id="Historia_4" name="Historia_4" class="libro"> <img src="img/Historia_4.webp"
+                                    alt="Sapiens Yuval Noval Harari">
+                                <div class="content">Sapiens</div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="tarjeta">
+                        <a href="">
+                            <div id="Historia_5" name="Historia_5" class="libro"> <img src="img/Historia_5.webp"
+                                    alt="Salvador Allende Mario Amorós">
+                                <div class="content">Salvador Allende</div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="tarjeta">
+                        <a href="">
+                            <div id="Historia_6" name="Historia_6" class="libro"> <img src="img/Historia_6.webp"
+                                    alt="He vivido tan poco Eva Heyman">
+                                <div class="content">He vivido tan poco</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </section>
+    </div>
+</body>
+
+</html>
